@@ -20,6 +20,15 @@ Used for data structures and data analysis tools.
 - **`df.to_excel()`**: Exports the DataFrame to an Excel file.
 - **`pd.cut()`**: Segments and sorts data values into bins (used for categorization).
 - **`pd.to_numeric()`**: Converts arguments to a numeric type (float or int).
+- **`pd.set_option()`**: Used to adjust settings for how data is displayed in the terminal.
+- **`df.mean()`, `df.min()`, `df.max()`**: Calculate the average, minimum, or maximum values.
+- **`df.idxmax()`, `df.idxmin()`**: Find the index of the first occurrence of the maximum or minimum value.
+- **`df.unique()`**: Returns all unique values in a column.
+- **`df.sort_index()`**: Sorts the data based on its index labels.
+- **`df.fillna()`**: Replaces empty or "Not a Number" (NaN) values with a specific value.
+- **`df.astype()`**: Changes the data type of a column (e.g., converting everything to string).
+- **`df.to_string()`**: Formats the entire DataFrame as a string for clean printing.
+- **`pd.Series()`**: Creates a one-dimensional array-like object.
 
 ### **NumPy (`import numpy as np`)**
 Used for scientific computing and handling multidimensional arrays.
@@ -40,7 +49,8 @@ Used for making HTTP requests to fetch web content.
 Used for parsing HTML and XML documents and extracting data.
 - **`BeautifulSoup(text, "html.parser")`**: Creates a parse tree for the HTML text.
 - **`soup.find_all()`**: Searches the HTML for all occurrences of a specific tag or class.
-- **`tag.text.strip()`**: Extracts the text from an HTML tag and removes leading/trailing whitespace.
+- **`soup.find()`**: Searches the HTML for only the **first** occurrence of a specific tag or class.
+- **`tag.text`**: Extracts the raw text from an HTML tag.
 - **`tag.get('attribute')`**: Retrieves the value of a specific HTML attribute (like 'title' or 'href').
 
 ---
@@ -74,24 +84,26 @@ Used for handling and converting emojis in text.
 ## 4. Visualization & Utilities
 
 ### **Matplotlib (`import matplotlib.pyplot as plt`)**
-A plotting library for creating static, animated, and interactive visualizations.
+A plotting library for creating charts and graphs.
 - **`plt.figure()`**: Creates a new figure for plotting.
 - **`plt.subplot()`**: Adds multiple plots in a single figure.
 - **`plt.pie()`**: Creates a pie chart.
 - **`plt.bar()`**: Creates a bar chart.
 - **`plt.title()`, `plt.ylabel()`**: Adds labels and titles to the charts.
+- **`plt.tight_layout()`**: Automatically adjusts subplots to fit in the figure area without overlapping.
 - **`plt.savefig()`**: Saves the entire figure to an image file.
 - **`plt.close()`**: Closes a figure window to free up memory.
 
 ### **Re (`import re`)**
-The Regular Expression library for advanced pattern matching and string substitution.
+The Regular Expression library for advanced pattern matching.
 - **`re.sub(pattern, replacement, string)`**: Searches for a pattern and replaces it with a specified string (used for cleaning hashtags, handles, and RT prefixes).
 
-### **Random (`import random`)**
-Used for generating random numbers and selecting random elements.
-- **`random.choice()`**: Selects a random element from a non-empty sequence.
-
-### **OS (`import os`)**
-Provides a way to use operating system dependent functionality.
+### **General Python Utilities**
+- **`.strip()`**: Removes leading and trailing whitespace from a string.
+- **`.replace()`**: Replaces a specified phrase with another specified phrase.
+- **`round(value, n)`**: Rounds a number to 'n' decimal places.
+- **`len()`**: returns the number of items (length) in an object (list, string, etc.).
+- **`sorted()`**: returns a sorted list of the specified iterable object.
+- **`map()`**: executes a specified function for each item in an iterable.
 - **`os.chdir()`**: Changes the current working directory.
-- **`os.path.dirname(os.path.abspath(__file__))`**: Finds the directory where the current script is located.
+- **`random.choice()`**: Selects a random element from a list.
