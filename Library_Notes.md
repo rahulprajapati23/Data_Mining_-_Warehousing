@@ -123,3 +123,16 @@ The Regular Expression library for advanced pattern matching.
 - **`abs()`**: Returns the absolute (positive) value of a number.
 - **`int()` / `float()`**: Converts a value into an integer or a floating-point number.
 - **`interval.left` / `interval.right`**: Used on Pandas Interval objects to get the start and end of a bin.
+
+---
+
+## 5. Python Syntax & Special Features
+
+These are not "functions" in the traditional sense, but special Python features used throughout the code:
+
+- **f-strings (`f"Result: {value}"`)**: Used for easy string formatting by embedding variables directly inside the string between `{}` braces.
+- **Slicing (`text[:100]`)**: Extracts a portion of a string or list. `[:100]` gets the first 100 characters.
+- **List Comprehensions (`[x for x in list]`)**: A concise way to generate new lists based on existing iterables.
+- **`zip(list1, list2)`**: Pairs up elements from two lists to iterate over them together.
+- **`range(start, end)`**: Generates a sequence of numbers from start to (end - 1).
+- **`__file__`**: A special variable that always holds the path of the script currently being run.
