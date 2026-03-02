@@ -20,6 +20,10 @@ Used for data structures and data analysis tools.
 - **`df.to_excel()`**: Exports the DataFrame to an Excel file.
 - **`pd.cut()`**: Segments and sorts data values into bins (used for categorization).
 - **`pd.to_numeric()`**: Converts arguments to a numeric type (float or int).
+- **`df.iloc[]`**: Accesses a group of rows and columns by integer-based index (e.g., `df.iloc[0]`).
+- **`df.sum()`**: Adds up the values in a column or across rows.
+- **`df.empty`**: An attribute that returns `True` if the DataFrame is empty (has no data).
+- **`pd.Series.apply()`**: Similar to DataFrame's apply, it executes a function on every element of a Series.
 - **`pd.set_option()`**: Used to adjust settings for how data is displayed in the terminal.
 - **`df.mean()`, `df.min()`, `df.max()`**: Calculate the average, minimum, or maximum values.
 - **`df.idxmax()`, `df.idxmin()`**: Find the index of the first occurrence of the maximum or minimum value.
@@ -35,6 +39,8 @@ Used for scientific computing and handling multidimensional arrays.
 - **`np.linspace()`**: Creates an evenly spaced sequence of numbers over a specified range (used for binning).
 - **`np.array_split()`**: Splits an array into multiple sub-arrays (used for equal frequency binning).
 - **`np.median()`**: Calculates the median value of a dataset.
+- **`array.mean()`**: (On a NumPy array) calculates the average of the elements.
+- **`array.tolist()`**: Converts a NumPy array back into a standard Python list.
 
 ---
 
@@ -106,4 +112,14 @@ The Regular Expression library for advanced pattern matching.
 - **`sorted()`**: returns a sorted list of the specified iterable object.
 - **`map()`**: executes a specified function for each item in an iterable.
 - **`os.chdir()`**: Changes the current working directory.
+- **`os.path.dirname()`**: Returns the directory name of a file path.
+- **`os.path.abspath()`**: Returns the absolute (full) version of a file path.
+- **`__file__`**: A special variable that contains the path of the script currently being run.
 - **`random.choice()`**: Selects a random element from a list.
+- **`exit()`**: Terminates the script immediately. Used for error handling.
+- **`enumerate()`**: Used in loops to keep track of the index (number) of the current item.
+- **`next()`**: Retrieves the next item from an iterator (used here to find specific emoji data).
+- **`.items()`**: Used on dictionaries or Series to get both the key (or index) and the value in a loop.
+- **`abs()`**: Returns the absolute (positive) value of a number.
+- **`int()` / `float()`**: Converts a value into an integer or a floating-point number.
+- **`interval.left` / `interval.right`**: Used on Pandas Interval objects to get the start and end of a bin.
