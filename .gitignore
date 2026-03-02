@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Data & Large Files (Optional: remove if you want to keep them)
+*.csv.gzip
+*.zip
+
+# Images/Outputs
+*.png
+*.xlsx
