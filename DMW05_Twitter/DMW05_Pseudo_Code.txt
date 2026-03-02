@@ -1,0 +1,27 @@
+# Pseudo Code for Twitter Data Analysis (DMW05)
+
+1. START
+2. LOAD the Shinzo Abe combined tweets dataset from the compressed CSV.
+3. PREPROCESS by ensuring the 'text' column is stored as strings.
+4. DEFINE a sentiment analysis function using TextBlob's polarity score.
+    a. RETURN 'Positive' if score > 0.
+    b. RETURN 'Negative' if score < 0.
+    c. RETURN 'Neutral' if score = 0.
+5. COUNT total and unique tweets in the dataset.
+6. SELECT a random tweet and display its ID, text, and sentiment.
+7. APPLY the sentiment function to all tweets and COUNT the occurrences of each category.
+8. GENERATE visualization charts:
+    a. A PIE chart for sentiment percentage.
+    b. A BAR chart for sentiment counts.
+    c. SAVE as "sentiment_distributions.png".
+9. GENERATE word clouds for Positive and Negative sentiment categories.
+    a. JOINampled text for each category.
+    b. GENERATE and SAVE word cloud images.
+10. DEMONSTRATE data cleaning techniques:
+    a. REMOVE "RT @" and user prefixes from retweets.
+    b. REMOVE "@handles" and "#hashtags" from original text.
+    c. CONVERT emojis into readable text descriptions.
+11. PERFORM language processing:
+    a. LIST English stopwords.
+    b. TOKENIZE a random text into sentences and words.
+12. END

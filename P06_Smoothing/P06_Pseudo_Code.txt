@@ -1,0 +1,22 @@
+# Pseudo Code for Data Binning and Smoothing (P06)
+
+1. START
+2. PART 1: Customer Monthly Income Segmentation
+    a. CREATE a DataFrame with raw customer income data.
+    b. DEFINE bins and labels for income brackets (e.g., $0-2.5K, $2.5-5K, etc.).
+    c. APPLY the segmentation (pd.cut) to categorize each customer.
+    d. PRINT the results table.
+3. PART 2: Data Binning and Smoothing (Salary Data)
+    a. SORT the salary dataset naturally.
+    b. EQUAL WIDTH BINNING:
+        i. DIVIDE the range into 4 equal intervals.
+        ii. GROUP salaries into these bins and PRINT them.
+    c. EQUAL FREQUENCY BINNING:
+        i. DIVIDE the data into 3 bins with roughly the same number of elements.
+        ii. GROUP salaries and PRINT them.
+    d. SMOOTHING TECHNIQUES (Applied to Frequency Bins):
+        i. SMOOTH BY MEAN: REPLACE each value with the bin's average.
+        ii. SMOOTH BY MEDIAN: REPLACE each value with the bin's median.
+        iii. SMOOTH BY BOUNDARY: REPLACE each value with the closest boundary (min or max).
+4. PRINT all results.
+5. END

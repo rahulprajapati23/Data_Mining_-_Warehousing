@@ -1,0 +1,18 @@
+# Pseudo Code for Snapdeal Scraping (P01)
+
+1. START
+2. SET target URL to Snapdeal's mobile search results.
+3. SET User-Agent header to mimic a browser.
+4. FETCH the web page using the URL and headers.
+5. IF the request is successful:
+    a. PARSE the HTML content using BeautifulSoup.
+    b. FIND all product containers (div with class "product-tuple-listing").
+    c. FOR each product container:
+        i. EXTRACT product title and price.
+        ii. ADD these to a list of names and prices.
+    d. CREATE a DataFrame with the collected results.
+    e. DISPLAY the consolidated results table.
+    f. SAVE the data to an Excel file ("Snapdeal_Mobiles_v2.xlsx").
+6. ELSE:
+    a. PRINT error message.
+7. END

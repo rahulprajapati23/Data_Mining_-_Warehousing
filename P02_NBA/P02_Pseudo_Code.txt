@@ -1,0 +1,23 @@
+# Pseudo Code for NBA Data Analysis (P02)
+
+1. START
+2. LOAD the NBA 2018-19 Season dataset from the Excel file.
+3. IF the file loads successfully:
+    a. CALCULATE and display the average age of all players.
+    b. DISPLAY a preview of games played by the first 5 players.
+    c. COUNT and display the total number of unique teams.
+    d. FIND and display the minimum age among all players.
+    e. IDENTIFY the oldest player and display their details (Name, Age, Team).
+    f. SUM total games played for the 'Eastern' conference.
+    g. LIST all unique conference regions.
+    h. FILTER and list all players belonging to 'Boston Celtics'.
+    i. GROUP data by Division and SUM their respective games.
+    j. FIND the player with the most points and display their name and score.
+    k. FIND the player with the lowest personal fouls.
+    l. IDENTIFY the leader in 3-point field goal attempts.
+    m. CALCULATE average points scored across the entire dataset.
+    n. GROUP data by Division to FIND the average age for each.
+    o. GROUP data by Team to SUM total personal fouls.
+4. ELSE:
+    a. PRINT loading error.
+5. END

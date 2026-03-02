@@ -1,0 +1,22 @@
+# Pseudo Code for Employee Data Analysis (P03)
+
+1. START
+2. LOAD the employee dataset from the "employees.xlsx" file.
+3. IF the file loads successfully:
+    a. COUNT the total number of employee entries.
+    b. COUNT the number of unique department IDs.
+    c. FOR each department, FIND the maximum salary.
+    d. FIND the employee(s) who receive the minimum salary in the organization.
+    e. CALCULATE the total salary sum for each department.
+    f. COUNT the total number of unique managers.
+    g. COUNT the number of employees working in each department.
+    h. DISPLAY the highest salary in the entire organization.
+    i. FILTER and show details for employees with Job ID 'SA_MAN'.
+    j. CALCULATE the average salary for each department.
+    k. COUNT how many employees work under each manager.
+    l. CALCULATE commission amounts (Salary * Commission Pct) and FIND the employee with the maximum.
+    m. FIND the maximum salary for each Job ID designation.
+    n. CALCULATE the total salary payout for each Job ID.
+4. ELSE:
+    a. PRINT error message.
+5. END
